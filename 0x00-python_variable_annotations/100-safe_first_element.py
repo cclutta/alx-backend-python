@@ -4,7 +4,7 @@ safe_first_element module
 
 Contains function safe_first_element
 """
-from typing Sequence, Any, Union
+from typing import Sequence, Any, Union
 
 
 def safe_first_element(lst: Sequence[Any]) -> Union[Any, None]:
