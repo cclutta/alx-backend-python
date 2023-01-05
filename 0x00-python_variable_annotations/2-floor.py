@@ -4,7 +4,6 @@ floor module
 
 Contains one function floor
 """
-from math import floor
 
 
 def floor(n: float) -> int:
