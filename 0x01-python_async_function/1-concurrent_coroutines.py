@@ -4,8 +4,8 @@ Concurrent coroutines module.
 
 Contains function wait_n
 """
-import asyncio
-import random
+from asyncio import gather
+from typing import List
 
 wait_random = __import__('0-basic_async_syntax').wait_random
 
