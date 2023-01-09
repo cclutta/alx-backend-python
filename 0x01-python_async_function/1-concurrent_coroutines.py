@@ -1,21 +1,14 @@
 #!/usr/bin/env python3
 """
-This module contains an asynchronous coroutine.
-"""
+Measure runtime module.
 
+Contains function measure_runtime
+"""
 from typing import List
 from asyncio import gather
 
 wait_random = __import__('0-basic_async_syntax').wait_random
 
-
-async def wait_n(n: int, max_delay: int) -> List[float]:
-    """
-    Args:
-        n: The number of times to generate a random value.
-        max_delay: The maximum random time generated.
-    Returns:
-        The random generated values list.
-    """
-
+async def wait_n(n: int, max_delay) -> List[float]:
+    """will spawn wait_random n times with the specified max_delay. """
     return sorted(await gather(*[wait_random(max_delay) for i in range(n)]))
