@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """
-Measure runtime module.
+Concurrent module.
 
-Contains function measure_runtime
+Contains function wait_n
 """
 from typing import List
 from asyncio import gather
